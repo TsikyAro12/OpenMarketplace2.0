@@ -35,6 +35,8 @@ services:
             - SYS_NICE # prevent "mbind: Operation not permitted" errors
         volumes:
             - mysql-data:/var/lib/mysql:rw
+        ports:
+            - "3307:3306"
     nginx:
         image: ghcr.io/sylius/sylius-nginx:latest
     mailhog:
