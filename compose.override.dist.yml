@@ -10,7 +10,7 @@ services:
             APP_DEBUG: 0
             APP_ENV: ${ENV:-prod}
             APP_SECRET: EDITME
-            DATABASE_URL: "mysql://root@mysql/sylius_%kernel.environment%"
+            DATABASE_URL: "mysql://root@openmarketplace20_mysql_1/sylius_%kernel.environment%"
             MAILER_DSN: smtp://mailhog:1025
             MESSENGER_TRANSPORT_DSN: doctrine://default
             SYLIUS_MESSENGER_TRANSPORT_MAIN_DSN: doctrine://default
