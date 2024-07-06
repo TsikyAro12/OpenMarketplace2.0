@@ -31,6 +31,7 @@ services:
               - MYSQL_DATABASE=open_marketplace
               - MYSQL_USER=open_marketplace
               - MYSQL_PASSWORD=Rary123!
+              - MYSQL_ALLOW_EMPTY_PASSWORD=1
         cap_add:
             - SYS_NICE # prevent "mbind: Operation not permitted" errors
         volumes:
