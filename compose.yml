@@ -37,7 +37,7 @@ services:
         volumes:
             - mysql-data:/var/lib/mysql:rw
         ports:
-            - "3306:3307"
+            - "3307:3306"
     nginx:
         image: ghcr.io/sylius/sylius-nginx:latest
     mailhog:
