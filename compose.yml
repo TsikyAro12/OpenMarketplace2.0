@@ -5,7 +5,7 @@ services:
           - APP_ENV=dev
           - APP_DEBUG=1
           - APP_SECRET=EDITME
-          - DATABASE_URL=mysql://open_marketplace:Rary123!@mysql:3307/open_marketplace
+          - DATABASE_URL=mysql://open_marketplace:Rary123!@mysql:3308/open_marketplace
           - MAILER_URL=smtp://mailhog:1025
           - PHP_DATE_TIMEZONE=${PHP_DATE_TIMEZONE:-UTC}
     # sylius:
@@ -37,7 +37,7 @@ services:
         volumes:
             - mysql-data:/var/lib/mysql:rw
         ports:
-            - "3307:3306"
+            - "3308:3306"
     nginx:
         image: ghcr.io/sylius/sylius-nginx:latest
     mailhog:
