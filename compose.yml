@@ -27,7 +27,7 @@ services:
             interval: 1s
             retries: 10
         environment:
-              - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-nopassword}
+              - MYSQL_ROOT_PASSWORD='root'
               - MYSQL_DATABASE=open_marketplace
               - MYSQL_USER=open_marketplace
               - MYSQL_PASSWORD='Rary123!'
