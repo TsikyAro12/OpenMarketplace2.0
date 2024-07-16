@@ -23,7 +23,7 @@ services:
         platform: linux/amd64
         healthcheck:
             test: '/usr/bin/mysql --execute "SHOW databases;"'
-            timeout: 3s
+            timeout: 10s
             interval: 1s
             retries: 10
         environment:
