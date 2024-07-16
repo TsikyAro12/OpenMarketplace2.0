@@ -5,7 +5,7 @@ services:
           - APP_ENV=dev
           - APP_DEBUG=1
           - APP_SECRET=EDITME
-          - DATABASE_URL=mysql://open_marketplace:Rary123!@openmarketplace20_mysql_1:3306/open_marketplace
+          - DATABASE_URL=mysql://root:root@openmarketplace20_mysql_1:3306/open_marketplace
           - MAILER_URL=smtp://mailhog:1025
           - PHP_DATE_TIMEZONE=${PHP_DATE_TIMEZONE:-UTC}
     # sylius:
@@ -29,8 +29,8 @@ services:
         environment:
               - MYSQL_ROOT_PASSWORD='root'
               - MYSQL_DATABASE=open_marketplace
-              - MYSQL_USER=open_marketplace
-              - MYSQL_PASSWORD=Rary123!
+              - MYSQL_USER=root
+              - MYSQL_PASSWORD=root
               - MYSQL_ALLOW_EMPTY_PASSWORD=1
         cap_add:
             - SYS_NICE # prevent "mbind: Operation not permitted" errors
